@@ -14,22 +14,22 @@ const Footer = () => {
             />
           </div>
           
-          <div className="space-y-4">
-            <div className="flex items-center justify-center md:justify-start text-white">
+          <div className="space-y-4 md:text-right">
+            <div className="flex items-center justify-center md:justify-end text-white">
               <MapPin className="w-5 h-5 mr-3 text-white" />
               <span className="font-ibm-plex">
                 Rua das Energias, 123 - Centro, São Paulo - SP
               </span>
             </div>
             
-            <div className="flex items-center justify-center md:justify-start text-white">
+            <div className="flex items-center justify-center md:justify-end text-white">
               <Mail className="w-5 h-5 mr-3 text-white" />
               <span className="font-ibm-plex">
                 contato@farm.com.br
               </span>
             </div>
             
-            <div className="flex items-center justify-center md:justify-start text-white">
+            <div className="flex items-center justify-center md:justify-end text-white">
               <Phone className="w-5 h-5 mr-3 text-white" />
               <span className="font-ibm-plex">
                 (11) 9999-9999
@@ -42,7 +42,7 @@ const Footer = () => {
         
         <div className="text-center text-gray-400">
           <p className="font-ibm-plex">
-            © 2024 FARM. Todos os direitos reservados.
+            © 2025 FARM. Todos os direitos reservados.
           </p>
         </div>
       </div>

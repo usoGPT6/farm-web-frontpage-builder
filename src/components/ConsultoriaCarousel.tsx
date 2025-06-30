@@ -95,12 +95,12 @@ const ConsultoriaCarousel = () => {
         </div>
 
         {/* Saiba mais button */}
-        <div className="text-center mt-12">
+        <div className="text-right mt-12">
           <Link 
             to="/consultorias"
-            className="inline-block bg-farm-secondary hover:bg-farm-secondary/90 text-white font-ibm-plex font-semibold px-8 py-3 rounded-lg transition-colors"
+            className="inline-block bg-farm-secondary hover:bg-farm-secondary/90 text-white font-ibm-plex font-semibold px-6 py-2 rounded-lg transition-colors text-sm"
           >
-            Saiba mais
+            Saiba mais ➔
           </Link>
         </div>
       </div>

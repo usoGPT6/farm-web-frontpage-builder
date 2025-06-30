@@ -28,8 +28,8 @@ const AboutSection = () => {
   return (
     <section className="bg-farm-light py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="font-ibm-plex text-4xl font-bold text-gray-800 mb-12">
+        <div className="mb-12">
+          <h2 className="font-ibm-plex text-4xl font-bold text-gray-800 mb-12 text-left">
             Quem somos?
           </h2>
           
@@ -42,18 +42,18 @@ const AboutSection = () => {
                 futuro energético do Brasil.
               </p>
             </div>
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-center lg:ml-24">
               <img 
-                src="/lovable-uploads/5031ee41-8000-45fc-bec3-4ba7ca41e59c.png" 
+                src="/lovable-uploads/f4cffbf2-58da-4820-9f15-adfc9d8fe979.png" 
                 alt="FARM Logo" 
-                className="h-32 w-32 object-contain"
+                className="h-40 w-40 object-contain"
               />
             </div>
           </div>
         </div>
 
         {/* Principais Áreas de Atuação title */}
-        <div className="text-center mb-8">
+        <div className="text-left mb-8">
           <h3 className="font-ibm-plex text-2xl font-semibold text-gray-800">
             Principais Áreas de Atuação
           </h3>
@@ -66,7 +66,7 @@ const AboutSection = () => {
                 <img 
                   src={service.icon} 
                   alt={service.title}
-                  className="w-16 h-16 object-contain"
+                  className="w-20 h-20 object-contain"
                 />
               </div>
               <h3 className="font-ibm-plex font-semibold text-lg text-gray-800 text-center mb-3">
