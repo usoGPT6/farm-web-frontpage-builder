@@ -16,21 +16,21 @@ const Footer = () => {
           
           <div className="space-y-4">
             <div className="flex items-center justify-center md:justify-start text-white">
-              <MapPin className="w-5 h-5 mr-3 text-farm-primary" />
+              <MapPin className="w-5 h-5 mr-3 text-white" />
               <span className="font-ibm-plex">
                 Rua das Energias, 123 - Centro, São Paulo - SP
               </span>
             </div>
             
             <div className="flex items-center justify-center md:justify-start text-white">
-              <Mail className="w-5 h-5 mr-3 text-farm-primary" />
+              <Mail className="w-5 h-5 mr-3 text-white" />
               <span className="font-ibm-plex">
                 contato@farm.com.br
               </span>
             </div>
             
             <div className="flex items-center justify-center md:justify-start text-white">
-              <Phone className="w-5 h-5 mr-3 text-farm-primary" />
+              <Phone className="w-5 h-5 mr-3 text-white" />
               <span className="font-ibm-plex">
                 (11) 9999-9999
               </span>

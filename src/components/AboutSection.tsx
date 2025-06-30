@@ -29,21 +29,34 @@ const AboutSection = () => {
     <section className="bg-farm-light py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="font-ibm-plex text-4xl font-bold text-gray-800 mb-6">
+          <h2 className="font-ibm-plex text-4xl font-bold text-gray-800 mb-12">
             Quem somos?
           </h2>
-          <div className="flex justify-center mb-8">
-            <img 
-              src="/lovable-uploads/de4cbacc-efa2-4e4e-ab18-4cae09dcb0b1.png" 
-              alt="FARM Logo" 
-              className="h-16 w-auto"
-            />
+          
+          {/* Content with text left and logo right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-16">
+            <div className="text-left">
+              <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed">
+                Somos uma empresa especializada em consultoria de energia renovável, 
+                comprometida em desenvolver soluções sustentáveis que transformam o 
+                futuro energético do Brasil.
+              </p>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <img 
+                src="/lovable-uploads/5031ee41-8000-45fc-bec3-4ba7ca41e59c.png" 
+                alt="FARM Logo" 
+                className="h-32 w-32 object-contain"
+              />
+            </div>
           </div>
-          <p className="font-ibm-plex text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Somos uma empresa especializada em consultoria de energia renovável, 
-            comprometida em desenvolver soluções sustentáveis que transformam o 
-            futuro energético do Brasil.
-          </p>
+        </div>
+
+        {/* Principais Áreas de Atuação title */}
+        <div className="text-center mb-8">
+          <h3 className="font-ibm-plex text-2xl font-semibold text-gray-800">
+            Principais Áreas de Atuação
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -53,7 +66,7 @@ const AboutSection = () => {
                 <img 
                   src={service.icon} 
                   alt={service.title}
-                  className="w-12 h-12 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
               </div>
               <h3 className="font-ibm-plex font-semibold text-lg text-gray-800 text-center mb-3">
@@ -66,15 +79,12 @@ const AboutSection = () => {
           ))}
         </div>
 
-        <div className="text-center">
-          <h3 className="font-ibm-plex text-2xl font-semibold text-gray-800 mb-4">
-            Principais Áreas de Atuação
-          </h3>
+        <div className="text-right">
           <Link 
             to="/sobrenos"
-            className="inline-block bg-farm-secondary hover:bg-farm-secondary/90 text-white font-ibm-plex font-semibold px-8 py-3 rounded-lg transition-colors"
+            className="inline-block bg-farm-secondary hover:bg-farm-secondary/90 text-white font-ibm-plex font-semibold px-6 py-2 rounded-lg transition-colors text-sm"
           >
-            Saiba mais
+            Saiba mais ➔
           </Link>
         </div>
       </div>

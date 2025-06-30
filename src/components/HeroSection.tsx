@@ -26,16 +26,16 @@ const HeroSection = () => {
           </p>
           <Link 
             to="/contato"
-            className="inline-block bg-farm-primary hover:bg-farm-primary/90 text-white font-ibm-plex font-semibold px-8 py-4 rounded-lg transition-colors"
+            className="inline-block bg-white hover:bg-gray-100 text-gray-800 font-ibm-plex font-semibold px-8 py-4 rounded-lg transition-colors"
           >
             Fale conosco
           </Link>
         </div>
       </div>
       
-      {/* Wave decoration */}
-      <div className="absolute bottom-0 left-0 w-full">
-        <svg viewBox="0 0 1200 120" className="w-full h-20">
+      {/* Wave decoration - covers full width */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+        <svg viewBox="0 0 1200 120" className="w-full h-20" preserveAspectRatio="none">
           <path d="M0,60 Q300,100 600,60 T1200,60 L1200,120 L0,120 Z" fill="#1EC4BF" />
           <path d="M0,80 Q300,110 600,80 T1200,80 L1200,120 L0,120 Z" fill="#F5F5F5" />
         </svg>

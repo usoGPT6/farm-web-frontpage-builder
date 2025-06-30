@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ConsultoriaCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -41,12 +42,24 @@ const ConsultoriaCarousel = () => {
           <h2 className="font-ibm-plex text-4xl font-bold text-gray-800 mb-6">
             Nossas consultorias
           </h2>
-          <p className="font-ibm-plex text-lg text-gray-600 max-w-2xl mx-auto">
-            Oferecemos serviços especializados em diferentes áreas da energia renovável
-          </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-6xl mx-auto">
+          {/* Navigation buttons - outside the div */}
+          <button 
+            onClick={prevSlide}
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-16 bg-white/80 hover:bg-white shadow-lg rounded-full p-3 transition-all z-10"
+          >
+            <ChevronLeft className="w-6 h-6 text-gray-600" />
+          </button>
+          
+          <button 
+            onClick={nextSlide}
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-16 bg-white/80 hover:bg-white shadow-lg rounded-full p-3 transition-all z-10"
+          >
+            <ChevronRight className="w-6 h-6 text-gray-600" />
+          </button>
+
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="md:flex">
               <div className="md:w-1/2">
@@ -67,21 +80,6 @@ const ConsultoriaCarousel = () => {
             </div>
           </div>
 
-          {/* Navigation buttons */}
-          <button 
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white shadow-lg rounded-full p-2 transition-all"
-          >
-            <ChevronLeft className="w-6 h-6 text-gray-600" />
-          </button>
-          
-          <button 
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white shadow-lg rounded-full p-2 transition-all"
-          >
-            <ChevronRight className="w-6 h-6 text-gray-600" />
-          </button>
-
           {/* Dots indicator */}
           <div className="flex justify-center mt-6 space-x-2">
             {consultorias.map((_, index) => (
@@ -94,6 +92,16 @@ const ConsultoriaCarousel = () => {
               />
             ))}
           </div>
+        </div>
+
+        {/* Saiba mais button */}
+        <div className="text-center mt-12">
+          <Link 
+            to="/consultorias"
+            className="inline-block bg-farm-secondary hover:bg-farm-secondary/90 text-white font-ibm-plex font-semibold px-8 py-3 rounded-lg transition-colors"
+          >
+            Saiba mais
+          </Link>
         </div>
       </div>
     </section>
