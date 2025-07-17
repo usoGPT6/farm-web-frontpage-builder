@@ -35,8 +35,8 @@ const Consultorias = () => {
       <Header />
       
       {/* Hero Section with Background Image and Waves */}
-      <section className="relative h-[400px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/usina-eletrica.png')"}}>
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <section className="relative h-[400px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/6c4cc0a8-46fa-48fa-946c-79bde93f0983.png')"}}>
+        <div className="absolute inset-0 bg-black/40"></div>
         
         {/* Content */}
         <div className="relative z-10 flex items-center justify-center h-full">
@@ -47,12 +47,10 @@ const Consultorias = () => {
           </div>
         </div>
 
-        {/* Waves - usando as mesmas da home */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-          <svg className="relative block w-full h-24" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,80 Q300,110 600,80 T1200,80 L1200,120 L0,120 Z" fill="#1EC4BF" />
-          </svg>
-          <svg className="relative block w-full h-16 -mt-1" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+        {/* Wave decoration - exatamente igual à da home */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+          <svg viewBox="0 0 1200 120" className="w-full h-20" preserveAspectRatio="none">
+            <path d="M0,60 Q300,100 600,60 T1200,60 L1200,120 L0,120 Z" fill="#1EC4BF" />
             <path d="M0,80 Q300,110 600,80 T1200,80 L1200,120 L0,120 Z" fill="#F5F5F5" />
           </svg>
         </div>
