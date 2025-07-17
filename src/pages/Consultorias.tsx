@@ -8,25 +8,25 @@ const Consultorias = () => {
       id: 'consultoria-abc',
       title: 'Consultoria ABC',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/lovable-uploads/73fa1b2a-8640-4b28-9572-4aa0be4eed6e.png'
+      image: '/lovable-uploads/consultoria-solar.png'
     },
     {
       id: 'consultoria-klm',
       title: 'Consultoria KLM',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/lovable-uploads/73fa1b2a-8640-4b28-9572-4aa0be4eed6e.png'
+      image: '/lovable-uploads/consultoria-solar.png'
     },
     {
       id: 'consultoria-ghi',
       title: 'Consultoria GHI',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/lovable-uploads/73fa1b2a-8640-4b28-9572-4aa0be4eed6e.png'
+      image: '/lovable-uploads/consultoria-solar.png'
     },
     {
       id: 'consultoria-xyz',
       title: 'Consultoria XYZ',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/lovable-uploads/73fa1b2a-8640-4b28-9572-4aa0be4eed6e.png'
+      image: '/lovable-uploads/consultoria-solar.png'
     }
   ];
 
@@ -35,7 +35,7 @@ const Consultorias = () => {
       <Header />
       
       {/* Hero Section with Background Image and Waves */}
-      <section className="relative h-[400px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/ee755a30-a880-4ef6-909e-b9798ce315eb.png')"}}>
+      <section className="relative h-[400px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/lovable-uploads/usina-eletrica.png')"}}>
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         
         {/* Content */}
@@ -47,13 +47,13 @@ const Consultorias = () => {
           </div>
         </div>
 
-        {/* Waves */}
+        {/* Waves - usando as mesmas da home */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-          <svg className="relative block w-full h-20" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#1EC4BF"></path>
+          <svg className="relative block w-full h-24" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,80 Q300,110 600,80 T1200,80 L1200,120 L0,120 Z" fill="#1EC4BF" />
           </svg>
           <svg className="relative block w-full h-16 -mt-1" preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#F5F5F5"></path>
+            <path d="M0,80 Q300,110 600,80 T1200,80 L1200,120 L0,120 Z" fill="#F5F5F5" />
           </svg>
         </div>
       </section>

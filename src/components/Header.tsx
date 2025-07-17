@@ -58,7 +58,7 @@ const Header = () => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="md:hidden bg-white shadow-lg transform transition-transform duration-300 ease-in-out animate-slide-in-right">
           <nav className="px-4 py-2 space-y-2">
             <Link 
               to="/" 
