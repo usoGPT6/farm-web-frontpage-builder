@@ -57,40 +57,42 @@ const Header = () => {
       </div>
 
       {/* Mobile menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg transform transition-transform duration-300 ease-in-out animate-slide-in-right">
-          <nav className="px-4 py-2 space-y-2">
-            <Link 
-              to="/" 
-              className="block font-ibm-plex text-gray-700 hover:text-farm-primary transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link 
-              to="/consultorias" 
-              className="block font-ibm-plex text-gray-700 hover:text-farm-primary transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Consultorias
-            </Link>
-            <Link 
-              to="/sobrenos" 
-              className="block font-ibm-plex text-gray-700 hover:text-farm-primary transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Sobre nós
-            </Link>
-            <Link 
-              to="/contato" 
-              className="block font-ibm-plex text-gray-700 hover:text-farm-primary transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Fale conosco
-            </Link>
-          </nav>
-        </div>
-      )}
+      <div className={`md:hidden bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
+        isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+      }`}>
+        <nav className={`px-4 py-2 space-y-2 transform transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}>
+          <Link 
+            to="/" 
+            className="block font-ibm-plex text-gray-700 hover:text-farm-primary transition-colors py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <Link 
+            to="/consultorias" 
+            className="block font-ibm-plex text-gray-700 hover:text-farm-primary transition-colors py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Consultorias
+          </Link>
+          <Link 
+            to="/sobrenos" 
+            className="block font-ibm-plex text-gray-700 hover:text-farm-primary transition-colors py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Sobre nós
+          </Link>
+          <Link 
+            to="/contato" 
+            className="block font-ibm-plex text-gray-700 hover:text-farm-primary transition-colors py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Fale conosco
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 };
