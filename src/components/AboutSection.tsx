@@ -62,7 +62,7 @@ const AboutSection = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 w-full cursor-pointer transform hover:scale-105"
+              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 w-full cursor-pointer transform hover:scale-105 animate-fade-in"
               onClick={() => setSelectedService(index)}
             >
               <div className="flex justify-center mb-4">
@@ -82,13 +82,21 @@ const AboutSection = () => {
         {/* Modal Overlay */}
         {selectedService !== null && (
           <div 
-            className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4 animate-fade-in"
             onClick={() => setSelectedService(null)}
           >
             <div 
-              className="bg-white rounded-lg p-8 max-w-md w-full transform scale-110 animate-scale-in"
+              className="bg-white rounded-lg p-8 max-w-md w-full relative animate-scale-in"
               onClick={(e) => e.stopPropagation()}
             >
+              {/* X button no canto superior direito */}
+              <button 
+                onClick={() => setSelectedService(null)}
+                className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl font-bold transition-colors"
+              >
+                ×
+              </button>
+              
               <div className="flex justify-center mb-6">
                 <img 
                   src={services[selectedService].icon} 
@@ -113,12 +121,6 @@ const AboutSection = () => {
                   'Auxiliamos na conformidade regulatória e certificações necessárias para projetos de energia renovável.'
                 }
               </p>
-              <button 
-                onClick={() => setSelectedService(null)}
-                className="mt-6 w-full bg-farm-secondary hover:bg-farm-secondary/90 text-white font-ibm-plex font-semibold py-2 px-4 rounded-lg transition-colors"
-              >
-                Fechar
-              </button>
             </div>
           </div>
         )}
