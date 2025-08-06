@@ -45,9 +45,19 @@ const AboutSection = () => {
               <img 
                 src="/lovable-uploads/f4cffbf2-58da-4820-9f15-adfc9d8fe979.png" 
                 alt="FARM Logo" 
-                className="h-40 w-40 object-contain"
+                className="h-60 w-60 object-contain"
               />
             </div>
+          </div>
+
+          {/* Botão Saiba mais */}
+          <div className="text-right mb-12">
+            <Link 
+              to="/sobrenos"
+              className="inline-block bg-farm-secondary hover:bg-farm-secondary/90 text-white font-ibm-plex font-semibold px-6 py-2 rounded-lg transition-colors text-sm"
+            >
+              Saiba mais ➔
+            </Link>
           </div>
         </div>
 
@@ -62,7 +72,7 @@ const AboutSection = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 w-full cursor-pointer transform hover:scale-105 animate-fade-in"
+              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 w-full cursor-pointer transform hover:scale-110 active:scale-95 animate-fade-in hover:animate-pulse"
               onClick={() => setSelectedService(index)}
             >
               <div className="flex justify-center mb-4">
@@ -125,14 +135,6 @@ const AboutSection = () => {
           </div>
         )}
 
-        <div className="text-right">
-          <Link 
-            to="/sobrenos"
-            className="inline-block bg-farm-secondary hover:bg-farm-secondary/90 text-white font-ibm-plex font-semibold px-6 py-2 rounded-lg transition-colors text-sm"
-          >
-            Saiba mais ➔
-          </Link>
-        </div>
       </div>
     </section>
   );
