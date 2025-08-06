@@ -1,10 +1,7 @@
 
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 
 const AboutSection = () => {
-  const [selectedService, setSelectedService] = useState<number | null>(null);
-  
   const services = [
     {
       icon: '/lovable-uploads/4469467f-02e9-495b-bd2c-f62f155161d9.png',
@@ -20,7 +17,7 @@ const AboutSection = () => {
     },
     {
       icon: '/lovable-uploads/9c8e08fd-c8e5-4e8b-acda-4ad009147a77.png',
-      title: 'Regulação'
+      title: 'Certificações'
     }
   ];
 
@@ -60,11 +57,7 @@ const AboutSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12">
           {services.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 w-full cursor-pointer transform hover:scale-105"
-              onClick={() => setSelectedService(index)}
-            >
+            <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow w-full">
               <div className="flex justify-center mb-4">
                 <img 
                   src={service.icon} 
@@ -78,50 +71,6 @@ const AboutSection = () => {
             </div>
           ))}
         </div>
-
-        {/* Modal Overlay */}
-        {selectedService !== null && (
-          <div 
-            className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
-            onClick={() => setSelectedService(null)}
-          >
-            <div 
-              className="bg-white rounded-lg p-8 max-w-md w-full transform scale-110 animate-scale-in"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="flex justify-center mb-6">
-                <img 
-                  src={services[selectedService].icon} 
-                  alt={services[selectedService].title}
-                  className="w-32 h-32 object-contain"
-                />
-              </div>
-              <h3 className="font-ibm-plex font-bold text-2xl text-gray-800 text-center mb-4">
-                {services[selectedService].title}
-              </h3>
-              <p className="font-ibm-plex text-gray-600 text-center leading-relaxed">
-                {services[selectedService].title === 'Energia Renovável' && 
-                  'Desenvolvemos soluções inovadoras em energia solar, eólica e outras fontes renováveis para um futuro sustentável.'
-                }
-                {services[selectedService].title === 'Consultoria Técnica' && 
-                  'Oferecemos expertise técnica especializada para otimizar seus projetos de energia renovável.'
-                }
-                {services[selectedService].title === 'Parcerias Estratégicas' && 
-                  'Estabelecemos parcerias sólidas com empresas e instituições para maximizar o impacto dos projetos.'
-                }
-                {services[selectedService].title === 'Regulação' && 
-                  'Auxiliamos na conformidade regulatória e certificações necessárias para projetos de energia renovável.'
-                }
-              </p>
-              <button 
-                onClick={() => setSelectedService(null)}
-                className="mt-6 w-full bg-farm-secondary hover:bg-farm-secondary/90 text-white font-ibm-plex font-semibold py-2 px-4 rounded-lg transition-colors"
-              >
-                Fechar
-              </button>
-            </div>
-          </div>
-        )}
 
         <div className="text-right">
           <Link 

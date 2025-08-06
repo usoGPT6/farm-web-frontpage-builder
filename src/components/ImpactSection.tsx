@@ -31,12 +31,12 @@ const ImpactSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {impacts.map((impact, index) => (
             <div key={index} className="text-center">
-               <div className="mb-4">
-                <span className="font-ibm-plex text-5xl md:text-6xl font-bold" style={{color: '#1E1E1E'}}>
+              <div className="mb-4">
+                <span className="font-ibm-plex text-5xl md:text-6xl font-bold text-white block">
                   {impact.number}
                 </span>
               </div>
-              <p className="font-ibm-plex text-lg leading-relaxed" style={{color: '#1E1E1E'}}>
+              <p className="font-ibm-plex text-lg text-white/90 leading-relaxed">
                 {impact.description}
               </p>
             </div>
