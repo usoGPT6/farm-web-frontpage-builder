@@ -26,12 +26,6 @@ const Header = () => {
             Home
           </Link>
           <Link 
-            to="/consultorias" 
-            className="font-ibm-plex text-gray-700 hover:text-farm-primary transition-colors"
-          >
-            Consultorias
-          </Link>
-          <Link 
             to="/sobrenos" 
             className="font-ibm-plex text-gray-700 hover:text-farm-primary transition-colors"
           >
@@ -69,13 +63,6 @@ const Header = () => {
             onClick={() => setIsMenuOpen(false)}
           >
             Home
-          </Link>
-          <Link 
-            to="/consultorias" 
-            className="block font-ibm-plex text-gray-700 hover:text-farm-primary transition-colors py-2"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Consultorias
           </Link>
           <Link 
             to="/sobrenos" 
