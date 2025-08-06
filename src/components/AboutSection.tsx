@@ -51,7 +51,7 @@ const AboutSection = () => {
           </div>
 
           {/* Botão Saiba mais */}
-          <div className="text-right mb-12">
+          <div className="text-left mb-12">
             <Link 
               to="/sobrenos"
               className="inline-block bg-farm-secondary hover:bg-farm-secondary/90 text-white font-ibm-plex font-semibold px-6 py-2 rounded-lg transition-colors text-sm"
