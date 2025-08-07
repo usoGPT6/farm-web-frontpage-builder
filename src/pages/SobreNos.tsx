@@ -147,22 +147,23 @@ const SobreNos = () => {
           <>
             {/* Seção A Empresa */}
             <div className="container mx-auto px-4 mb-16">
-              <h2 className="font-ibm-plex text-4xl font-bold text-farm-dark mb-12">
+              <h2 className="font-ibm-plex text-4xl font-bold text-farm-dark mb-8 text-center">
                 A Empresa
               </h2>
               
+              <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed mb-12 text-center max-w-4xl mx-auto">
+                É uma sociedade constituída por executivos sêniores, com larga experiência em posições de liderança no planejamento 
+                e execução de estratégias vencedoras na estrutura, na infraestrutura, na construção e na operação, com comprovada habilidade no relacionamento 
+                e negociação com Acionistas, Conselheiros, Executivos e Entidades Governamentais e Privadas.
+              </p>
+              
               {/* Nossa Trajetória */}
               <div className="mb-16">
-                <h3 className="font-ibm-plex text-2xl font-bold text-farm-dark mb-8">
+                <h3 className="font-ibm-plex text-4xl font-bold text-farm-dark mb-8">
                   Nossa trajetória
                 </h3>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                   <div>
-                    <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed mb-4">
-                      É uma sociedade constituída por executivos sêniores, com larga experiência em posições de liderança no planejamento 
-                      e execução de estratégias vencedoras na estrutura, na infraestrutura, na construção e na operação, com comprovada habilidade no relacionamento 
-                      e negociação com Acionistas, Conselheiros, Executivos e Entidades Governamentais e Privadas.
-                    </p>
                     <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed mb-4">
                       Faucibus eget augue vitae justo rhoncus congue. Integer et mattis arcu rutus 
                       lobortis tincidunt. Morbi tristique, nulla ut auctor sollicitudin, ex justo 
@@ -187,20 +188,20 @@ const SobreNos = () => {
 
             {/* Cards Missão, Visão, Valores - sem título */}
             <div className="container mx-auto px-4 mb-16">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {cardsInfo.map((card, index) => (
                   <div 
                     key={index}
-                    className="bg-white rounded-lg p-10 shadow-lg hover:shadow-xl transition-all duration-300 text-center transform hover:scale-105 h-80"
+                    className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center transform hover:scale-105 h-96 max-w-xs mx-auto w-full"
                   >
-                    <div className="flex justify-center mb-8">
+                    <div className="flex justify-center mb-6">
                       <img 
                         src={card.icone} 
                         alt={card.titulo}
-                        className="w-20 h-20 object-contain"
+                        className="w-16 h-16 object-contain"
                       />
                     </div>
-                    <h3 className="font-ibm-plex font-bold text-2xl text-farm-dark mb-6">
+                    <h3 className="font-ibm-plex font-bold text-xl text-farm-dark mb-4">
                       {card.titulo}
                     </h3>
                     <p className="font-ibm-plex text-gray-600 leading-relaxed text-sm">
@@ -217,7 +218,7 @@ const SobreNos = () => {
                 Onde estamos presentes
               </h2>
               <div className="max-w-4xl mx-auto">
-                <Carousel className="w-full">
+                <Carousel className="w-full" opts={{ loop: true }}>
                   <CarouselContent>
                     {eventos.map((evento) => (
                       <CarouselItem key={evento.id} className="md:basis-1/2 lg:basis-1/3">
