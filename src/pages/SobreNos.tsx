@@ -147,42 +147,40 @@ const SobreNos = () => {
           <>
             {/* Seção A Empresa */}
             <div className="container mx-auto px-4 mb-16">
-              <div className="max-w-screen-lg mx-auto">
-                <h2 className="font-ibm-plex text-4xl font-bold text-farm-dark mb-8">
-                  A Empresa
-                </h2>
-                
-                <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed mb-12">
-                  É uma sociedade constituída por executivos sêniores, com larga experiência em posições de liderança no planejamento 
-                  e execução de estratégias vencedoras na estrutura, na infraestrutura, na construção e na operação, com comprovada habilidade no relacionamento 
-                  e negociação com Acionistas, Conselheiros, Executivos e Entidades Governamentais e Privadas.
-                </p>
-                
-                {/* Nossa Trajetória */}
-                <div className="mb-16">
-                  <h3 className="font-ibm-plex text-4xl font-bold text-farm-dark mb-8">
-                    Nossa trajetória
-                  </h3>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <div>
-                      <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed mb-4">
-                        Faucibus eget augue vitae justo rhoncus congue. Integer et mattis arcu rutus 
-                        lobortis tincidunt. Morbi tristique, nulla ut auctor sollicitudin, ex justo 
-                        lacinia magna, ut fermentum lorem tortor sed nisl.
-                      </p>
-                      <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed">
-                        Suspendisse fermentum gravida. Curabitur et lorem vitae elit posuere 
-                        sollicitudin. Proin nec sapien velit, porta tincidunt vectum, vel lobortis 
-                        odio lacus.
-                      </p>
-                    </div>
-                    <div className="flex justify-center">
-                      <img 
-                        src="/lovable-uploads/96d24c0f-1dd1-4d1e-afb9-2797cfc551a5.png" 
-                        alt="Nossa trajetória" 
-                        className="rounded-lg shadow-lg w-full max-w-md object-cover"
-                      />
-                    </div>
+              <h2 className="font-ibm-plex text-4xl font-bold text-farm-dark mb-8 text-center">
+                A Empresa
+              </h2>
+              
+              <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed mb-12 text-center max-w-4xl mx-auto">
+                É uma sociedade constituída por executivos sêniores, com larga experiência em posições de liderança no planejamento 
+                e execução de estratégias vencedoras na estrutura, na infraestrutura, na construção e na operação, com comprovada habilidade no relacionamento 
+                e negociação com Acionistas, Conselheiros, Executivos e Entidades Governamentais e Privadas.
+              </p>
+              
+              {/* Nossa Trajetória */}
+              <div className="mb-16">
+                <h3 className="font-ibm-plex text-4xl font-bold text-farm-dark mb-8">
+                  Nossa trajetória
+                </h3>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                  <div>
+                    <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed mb-4">
+                      Faucibus eget augue vitae justo rhoncus congue. Integer et mattis arcu rutus 
+                      lobortis tincidunt. Morbi tristique, nulla ut auctor sollicitudin, ex justo 
+                      lacinia magna, ut fermentum lorem tortor sed nisl.
+                    </p>
+                    <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed">
+                      Suspendisse fermentum gravida. Curabitur et lorem vitae elit posuere 
+                      sollicitudin. Proin nec sapien velit, porta tincidunt vectum, vel lobortis 
+                      odio lacus.
+                    </p>
+                  </div>
+                  <div className="flex justify-center">
+                    <img 
+                      src="/lovable-uploads/96d24c0f-1dd1-4d1e-afb9-2797cfc551a5.png" 
+                      alt="Nossa trajetória" 
+                      className="rounded-lg shadow-lg w-full max-w-md object-cover"
+                    />
                   </div>
                 </div>
               </div>
