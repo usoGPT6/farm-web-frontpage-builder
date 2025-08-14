@@ -199,7 +199,7 @@ const SobreNos = () => {
                 {cardsInfo.map((card, index) => (
                   <div 
                     key={index}
-                    className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center transform hover:scale-105 h-96 w-full"
+                    className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center transform hover:scale-105 h-96 max-w-xs mx-auto w-full"
                   >
                     <div className="flex justify-center mb-6">
                       <img 
