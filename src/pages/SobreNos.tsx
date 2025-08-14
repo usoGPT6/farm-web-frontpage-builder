@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useState } from 'react';
@@ -145,50 +144,56 @@ const SobreNos = () => {
       <main className="py-16 bg-farm-light">
         {activeTab === 'empresa' ? (
           <>
-            {/* Seção A Empresa */}
+            {/* Seção A Empresa - Usando o mesmo grid dos cards */}
             <div className="container mx-auto px-4 mb-16">
-              <div className="max-w-screen-lg mx-auto">
-                <h2 className="font-ibm-plex text-4xl font-bold text-farm-dark mb-8">
-                  A Empresa
-                </h2>
-                
-                <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed mb-12">
+              {/* Título centralizado respeitando o grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div></div>
+                <div className="text-center">
+                  <h2 className="font-ibm-plex text-4xl font-bold text-farm-dark">
+                    A Empresa
+                  </h2>
+                </div>
+                <div></div>
+              </div>
+              
+              {/* Texto da empresa alinhado ao grid dos cards */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <p className="md:col-span-3 font-ibm-plex text-lg text-gray-600 leading-relaxed text-left">
                   É uma sociedade constituída por executivos sêniores, com larga experiência em posições de liderança no planejamento 
                   e execução de estratégias vencedoras na estrutura, na infraestrutura, na construção e na operação, com comprovada habilidade no relacionamento 
                   e negociação com Acionistas, Conselheiros, Executivos e Entidades Governamentais e Privadas.
                 </p>
-                
-                {/* Nossa Trajetória */}
-                <div className="mb-16">
-                  <h3 className="font-ibm-plex text-4xl font-bold text-farm-dark mb-8">
-                    Nossa trajetória
-                  </h3>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <div>
-                      <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed mb-4">
-                        Faucibus eget augue vitae justo rhoncus congue. Integer et mattis arcu rutus 
-                        lobortis tincidunt. Morbi tristique, nulla ut auctor sollicitudin, ex justo 
-                        lacinia magna, ut fermentum lorem tortor sed nisl.
-                      </p>
-                      <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed">
-                        Suspendisse fermentum gravida. Curabitur et lorem vitae elit posuere 
-                        sollicitudin. Proin nec sapien velit, porta tincidunt vectum, vel lobortis 
-                        odio lacus.
-                      </p>
-                    </div>
-                    <div className="flex justify-center">
-                      <img 
-                        src="/lovable-uploads/96d24c0f-1dd1-4d1e-afb9-2797cfc551a5.png" 
-                        alt="Nossa trajetória" 
-                        className="rounded-lg shadow-lg w-full max-w-md object-cover"
-                      />
-                    </div>
-                  </div>
+              </div>
+              
+              {/* Nossa Trajetória - alinhado ao grid dos cards */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <h3 className="md:col-span-3 font-ibm-plex text-4xl font-bold text-farm-dark mb-8 text-left">
+                  Nossa trajetória
+                </h3>
+                <div className="md:col-span-2">
+                  <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed mb-4 text-left">
+                    Faucibus eget augue vitae justo rhoncus congue. Integer et mattis arcu rutus 
+                    lobortis tincidunt. Morbi tristique, nulla ut auctor sollicitudin, ex justo 
+                    lacinia magna, ut fermentum lorem tortor sed nisl.
+                  </p>
+                  <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed text-left">
+                    Suspendisse fermentum gravida. Curabitur et lorem vitae elit posuere 
+                    sollicitudin. Proin nec sapien velit, porta tincidunt vectum, vel lobortis 
+                    odio lacus.
+                  </p>
+                </div>
+                <div className="flex justify-center">
+                  <img 
+                    src="/lovable-uploads/96d24c0f-1dd1-4d1e-afb9-2797cfc551a5.png" 
+                    alt="Nossa trajetória" 
+                    className="rounded-lg shadow-lg w-full max-w-md object-cover"
+                  />
                 </div>
               </div>
             </div>
 
-            {/* Cards Missão, Visão, Valores - sem título */}
+            {/* Cards Missão, Visão, Valores */}
             <div className="container mx-auto px-4 mb-16">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {cardsInfo.map((card, index) => (
@@ -214,40 +219,51 @@ const SobreNos = () => {
               </div>
             </div>
 
-            {/* Carrossel de Eventos */}
+            {/* Carrossel de Eventos - alinhado ao grid dos cards */}
             <div className="container mx-auto px-4">
-              <h2 className="font-ibm-plex text-3xl font-bold text-farm-dark text-center mb-12">
-                Onde estamos presentes
-              </h2>
-              <div className="max-w-4xl mx-auto">
-                <Carousel className="w-full" opts={{ loop: true }}>
-                  <CarouselContent>
-                    {eventos.map((evento) => (
-                      <CarouselItem key={evento.id} className="md:basis-1/2 lg:basis-1/3">
-                        <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full">
-                          <img 
-                            src={evento.imagem} 
-                            alt={evento.titulo}
-                            className="w-full h-48 object-cover"
-                          />
-                          <div className="p-6">
-                            <div className="text-farm-secondary font-ibm-plex font-semibold text-sm mb-2">
-                              {evento.data}
+              {/* Título centralizado respeitando o grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div></div>
+                <div className="text-center">
+                  <h2 className="font-ibm-plex text-3xl font-bold text-farm-dark">
+                    Onde estamos presentes
+                  </h2>
+                </div>
+                <div></div>
+              </div>
+              
+              {/* Carrossel respeitando o grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="md:col-span-3">
+                  <Carousel className="w-full" opts={{ loop: true }}>
+                    <CarouselContent>
+                      {eventos.map((evento) => (
+                        <CarouselItem key={evento.id} className="md:basis-1/2 lg:basis-1/3">
+                          <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full">
+                            <img 
+                              src={evento.imagem} 
+                              alt={evento.titulo}
+                              className="w-full h-48 object-cover"
+                            />
+                            <div className="p-6">
+                              <div className="text-farm-secondary font-ibm-plex font-semibold text-sm mb-2">
+                                {evento.data}
+                              </div>
+                              <h3 className="font-ibm-plex font-bold text-lg text-farm-dark mb-3">
+                                {evento.titulo}
+                              </h3>
+                              <p className="font-ibm-plex text-gray-600 text-sm leading-relaxed">
+                                {evento.descricao}
+                              </p>
                             </div>
-                            <h3 className="font-ibm-plex font-bold text-lg text-farm-dark mb-3">
-                              {evento.titulo}
-                            </h3>
-                            <p className="font-ibm-plex text-gray-600 text-sm leading-relaxed">
-                              {evento.descricao}
-                            </p>
                           </div>
-                        </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious />
-                  <CarouselNext />
-                </Carousel>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                  </Carousel>
+                </div>
               </div>
             </div>
           </>
