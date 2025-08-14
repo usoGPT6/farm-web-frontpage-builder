@@ -84,7 +84,7 @@ const SobreNos = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/lovable-uploads/f4bfded3-73fa-4b84-82b3-298e8f32e096.png')`
+            backgroundImage: `url('${activeTab === 'empresa' ? '/lovable-uploads/5408cd79-125c-4c87-99ae-048be3470a20.png' : '/lovable-uploads/f4bfded3-73fa-4b84-82b3-298e8f32e096.png'}')`
           }}
         />
         <div className="absolute inset-0 bg-black/40" />
