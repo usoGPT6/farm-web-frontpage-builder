@@ -84,7 +84,7 @@ const SobreNos = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/lovable-uploads/5408cd79-125c-4c87-99ae-048be3470a20.png')`
+            backgroundImage: `url('/lovable-uploads/f4bfded3-73fa-4b84-82b3-298e8f32e096.png')`
           }}
         />
         <div className="absolute inset-0 bg-black/40" />
@@ -270,14 +270,125 @@ const SobreNos = () => {
         ) : (
           /* Conteúdo para Sócios */
           <div className="container mx-auto px-4">
-            <div className="text-center">
-              <h2 className="font-ibm-plex text-3xl font-bold text-farm-dark mb-8">
-                Nossos Sócios
-              </h2>
-              <p className="font-ibm-plex text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                Conteúdo sobre os sócios em desenvolvimento. Aqui será apresentada 
-                informações sobre os fundadores e principais executivos da FARM.
-              </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Fábio Lopes Alves */}
+              <div className="bg-white rounded-lg p-6 shadow-lg">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/aea0bb19-fb30-4880-8446-2301f85387f1.png" 
+                      alt="Fábio Lopes Alves"
+                      className="w-20 h-20 rounded-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-ibm-plex font-bold text-lg text-farm-dark mb-2">
+                      Fábio Lopes Alves 🇧🇷
+                    </h3>
+                    <div className="font-ibm-plex text-sm text-gray-600 leading-relaxed space-y-1">
+                      <p>• Engenheiro Eletricista pela UFRJ</p>
+                      <p>• Executivo sênior no setor elétrico brasileiro - mais de 25 anos - com posições de liderança</p>
+                      <p>• Ex-Diretor Presidente da Elektro</p>
+                      <p>• Ex-Diretor da Área de Energia da Neoenergia</p>
+                      <p>• Ex-Vice-Presidente da ABCE - Associação Brasileira de Companhias de Energia Elétrica</p>
+                      <p>• Ex-Conselheiro da ABRADEE - Associação Brasileira de Distribuidoras de Energia Elétrica</p>
+                      <p>• Ex-Coordenador do Grupo de Trabalho de Eficiência Energética da ABRADEE</p>
+                      <p>• Ex-Presidente do Conselho de Administração da CEEE-D</p>
+                      <p>• Ex-Presidente do Comitê de Regulação Econômica da ABCE</p>
+                      <p>• Atualmente é consultor independente</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Antonio Carlos Reis da Souza */}
+              <div className="bg-white rounded-lg p-6 shadow-lg">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/aea0bb19-fb30-4880-8446-2301f85387f1.png" 
+                      alt="Antonio Carlos Reis da Souza"
+                      className="w-20 h-20 rounded-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-ibm-plex font-bold text-lg text-farm-dark mb-2">
+                      Antonio Carlos Reis da Souza 🇧🇷
+                    </h3>
+                    <div className="font-ibm-plex text-sm text-gray-600 leading-relaxed space-y-1">
+                      <p>• Engenheiro Civil pela Universidade Gama Filho/RJ</p>
+                      <p>• Executivo sênior com mais de 35 anos de experiência no setor elétrico - Geração, Transmissão, Distribuição</p>
+                      <p>• Ex-Diretor de Engenharia da Light S.A.</p>
+                      <p>• Ex-Diretor de Expansão e Engenharia da CERJ - Companhia de Eletricidade do Rio de Janeiro</p>
+                      <p>• Ex-Diretor de Engenharia e Construção da AMPLA</p>
+                      <p>• Ex-Diretor de Engenharia da Neoenergia</p>
+                      <p>• Ex-Diretor de Distribuição da Neoenergia</p>
+                      <p>• Ex-Coordenador Regional Sudeste da ABCE</p>
+                      <p>• Atualmente é consultor independente</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Francisco Roberto Ramos de Souza */}
+              <div className="bg-white rounded-lg p-6 shadow-lg">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/aea0bb19-fb30-4880-8446-2301f85387f1.png" 
+                      alt="Francisco Roberto Ramos de Souza"
+                      className="w-20 h-20 rounded-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-ibm-plex font-bold text-lg text-farm-dark mb-2">
+                      Francisco Roberto Ramos de Souza 🇧🇷
+                    </h3>
+                    <div className="font-ibm-plex text-sm text-gray-600 leading-relaxed space-y-1">
+                      <p>• Bacharel em Economia</p>
+                      <p>• Executivo sênior com mais de 35 anos de experiência no setor elétrico brasileiro - Geração, Transmissão, Distribuição, Comercialização</p>
+                      <p>• Ex-Diretor de Mercado da ELETROBRÁS</p>
+                      <p>• Ex-Diretor da FURNAS Centrais Elétricas S.A.</p>
+                      <p>• Ex-Diretor da AMPLA</p>
+                      <p>• Ex-Diretor de Negócios da Neoenergia</p>
+                      <p>• Ex-Presidente da ABCE - Associação Brasileira de Companhias de Energia Elétrica</p>
+                      <p>• Ex-Conselheiro da ONS - Operador Nacional do Sistema Elétrico</p>
+                      <p>• Ex-Conselheiro da CCEE - Câmara de Comercialização de Energia Elétrica</p>
+                      <p>• Atualmente é consultor independente</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Maurício Carripeiro Labo */}
+              <div className="bg-white rounded-lg p-6 shadow-lg">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/aea0bb19-fb30-4880-8446-2301f85387f1.png" 
+                      alt="Maurício Carripeiro Labo"
+                      className="w-20 h-20 rounded-full object-cover"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-ibm-plex font-bold text-lg text-farm-dark mb-2">
+                      Maurício Carripeiro Labo 🇧🇷
+                    </h3>
+                    <div className="font-ibm-plex text-sm text-gray-600 leading-relaxed space-y-1">
+                      <p>• Administrador de Empresas</p>
+                      <p>• MBA em Finanças pela FGV</p>
+                      <p>• Executivo sênior com mais de 25 anos de experiência no setor elétrico brasileiro</p>
+                      <p>• Ex-Diretor Financeiro e de Relações com Investidores da CPFL Energia</p>
+                      <p>• Ex-Diretor Financeiro da AMPLA</p>
+                      <p>• Ex-Diretor Financeiro da Neoenergia</p>
+                      <p>• Ex-Diretor Executivo da EDP Brasil</p>
+                      <p>• Ex-Conselheiro da ABRADEE - Associação Brasileira de Distribuidoras de Energia Elétrica</p>
+                      <p>• Ex-Coordenador do Grupo de Trabalho de Finanças da ABRADEE</p>
+                      <p>• Atualmente é consultor independente</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         )}
