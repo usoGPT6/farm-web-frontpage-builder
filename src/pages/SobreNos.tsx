@@ -284,8 +284,8 @@ const SobreNos = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
-                        Fábio Lopes Alves
+                      <h3 className="font-ibm-plex font-bold text-2xl text-farm-dark">
+                        <span className="font-bold">F</span>ábio Lopes Alves
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
@@ -324,8 +324,8 @@ const SobreNos = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
-                        Antonio Carlos Reis da Souza
+                      <h3 className="font-ibm-plex font-bold text-2xl text-farm-dark">
+                        <span className="font-bold">A</span>ntonio Carlos Reis da Souza
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
@@ -363,8 +363,8 @@ const SobreNos = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
-                        Francisco Roberto Ramos de Souza
+                      <h3 className="font-ibm-plex font-bold text-2xl text-farm-dark">
+                        Francisco <span className="font-bold">R</span>oberto Ramos de Souza
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
@@ -403,8 +403,8 @@ const SobreNos = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
-                        Maurício Carripeiro Labo
+                      <h3 className="font-ibm-plex font-bold text-2xl text-farm-dark">
+                        <span className="font-bold">M</span>aurício Carripeiro Labo
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
