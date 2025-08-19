@@ -273,7 +273,7 @@ const SobreNos = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
               {/* Fábio Lopes Alves */}
-              <div className="bg-white rounded-lg p-6 shadow-xl border-2 border-gray-300 hover:shadow-2xl hover:border-gray-400 transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
+              <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <img 
@@ -284,8 +284,8 @@ const SobreNos = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="font-ibm-plex font-bold text-xl text-farm-dark">
-                        <span className="font-extrabold">F</span>ábio Lopes Alves
+                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
+                        Fábio Lopes Alves
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
@@ -313,7 +313,7 @@ const SobreNos = () => {
               </div>
 
               {/* Antonio Carlos Reis da Souza */}
-              <div className="bg-white rounded-lg p-6 shadow-xl border-2 border-gray-300 hover:shadow-2xl hover:border-gray-400 transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
+              <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <img 
@@ -324,8 +324,8 @@ const SobreNos = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="font-ibm-plex font-bold text-xl text-farm-dark">
-                        <span className="font-extrabold">A</span>ntonio Carlos Reis da Souza
+                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
+                        Antonio Carlos Reis da Souza
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
@@ -352,7 +352,7 @@ const SobreNos = () => {
               </div>
 
               {/* Francisco Roberto Ramos de Souza */}
-              <div className="bg-white rounded-lg p-6 shadow-xl border-2 border-gray-300 hover:shadow-2xl hover:border-gray-400 transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
+              <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <img 
@@ -363,8 +363,8 @@ const SobreNos = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="font-ibm-plex font-bold text-xl text-farm-dark">
-                        Francisco <span className="font-extrabold">R</span>oberto Ramos de Souza
+                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
+                        Francisco Roberto Ramos de Souza
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
@@ -392,7 +392,7 @@ const SobreNos = () => {
               </div>
 
               {/* Maurício Carripeiro Labo */}
-              <div className="bg-white rounded-lg p-6 shadow-xl border-2 border-gray-300 hover:shadow-2xl hover:border-gray-400 transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
+              <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <img 
@@ -403,8 +403,8 @@ const SobreNos = () => {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="font-ibm-plex font-bold text-xl text-farm-dark">
-                        <span className="font-extrabold">M</span>aurício Carripeiro Labo
+                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
+                        Maurício Carripeiro Labo
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
