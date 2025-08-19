@@ -285,7 +285,7 @@ const SobreNos = () => {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="font-ibm-plex font-bold text-2xl text-farm-dark">
-                        <span className="font-bold">F</span>ábio Lopes Alves
+                        <span className="font-black">F</span>ábio Lopes Alves
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
@@ -325,7 +325,7 @@ const SobreNos = () => {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="font-ibm-plex font-bold text-2xl text-farm-dark">
-                        <span className="font-bold">A</span>ntonio Carlos Reis da Souza
+                        <span className="font-black">A</span>ntonio Carlos Reis da Souza
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
@@ -364,7 +364,7 @@ const SobreNos = () => {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="font-ibm-plex font-bold text-2xl text-farm-dark">
-                        Francisco <span className="font-bold">R</span>oberto Ramos de Souza
+                        Francisco <span className="font-black">R</span>oberto Ramos de Souza
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
@@ -404,7 +404,7 @@ const SobreNos = () => {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="font-ibm-plex font-bold text-2xl text-farm-dark">
-                        <span className="font-bold">M</span>aurício Carripeiro Labo
+                        <span className="font-black">M</span>aurício Carripeiro Labo
                       </h3>
                       <a 
                         href="https://www.linkedin.com/" 
