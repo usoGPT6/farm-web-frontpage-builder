@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useState } from 'react';
+import { Linkedin } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -270,21 +271,31 @@ const SobreNos = () => {
         ) : (
           /* Conteúdo para Sócios */
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
               {/* Fábio Lopes Alves */}
-              <div className="bg-white rounded-lg p-6 shadow-lg">
-                <div className="flex gap-4">
+              <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
+                <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/aea0bb19-fb30-4880-8446-2301f85387f1.png" 
+                      src="/lovable-uploads/e4c80f96-cd27-4816-a3e8-ef7f4cf369e6.png" 
                       alt="Fábio Lopes Alves"
-                      className="w-20 h-20 rounded-full object-cover"
+                      className="w-32 h-32 rounded-full object-cover"
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-ibm-plex font-bold text-lg text-farm-dark mb-2">
-                      Fábio Lopes Alves 🇧🇷
-                    </h3>
+                    <div className="flex items-center gap-3 mb-2">
+                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
+                        Fábio Lopes Alves
+                      </h3>
+                      <a 
+                        href="https://www.linkedin.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-gray-800 transition-colors"
+                      >
+                        <Linkedin size={20} />
+                      </a>
+                    </div>
                     <div className="font-ibm-plex text-sm text-gray-600 leading-relaxed space-y-1">
                       <p>• Engenheiro Eletricista pela UFRJ</p>
                       <p>• Executivo sênior no setor elétrico brasileiro - mais de 25 anos - com posições de liderança</p>
@@ -302,19 +313,29 @@ const SobreNos = () => {
               </div>
 
               {/* Antonio Carlos Reis da Souza */}
-              <div className="bg-white rounded-lg p-6 shadow-lg">
-                <div className="flex gap-4">
+              <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
+                <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/aea0bb19-fb30-4880-8446-2301f85387f1.png" 
+                      src="/lovable-uploads/e4c80f96-cd27-4816-a3e8-ef7f4cf369e6.png" 
                       alt="Antonio Carlos Reis da Souza"
-                      className="w-20 h-20 rounded-full object-cover"
+                      className="w-32 h-32 rounded-full object-cover"
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-ibm-plex font-bold text-lg text-farm-dark mb-2">
-                      Antonio Carlos Reis da Souza 🇧🇷
-                    </h3>
+                    <div className="flex items-center gap-3 mb-2">
+                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
+                        Antonio Carlos Reis da Souza
+                      </h3>
+                      <a 
+                        href="https://www.linkedin.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-gray-800 transition-colors"
+                      >
+                        <Linkedin size={20} />
+                      </a>
+                    </div>
                     <div className="font-ibm-plex text-sm text-gray-600 leading-relaxed space-y-1">
                       <p>• Engenheiro Civil pela Universidade Gama Filho/RJ</p>
                       <p>• Executivo sênior com mais de 35 anos de experiência no setor elétrico - Geração, Transmissão, Distribuição</p>
@@ -331,19 +352,29 @@ const SobreNos = () => {
               </div>
 
               {/* Francisco Roberto Ramos de Souza */}
-              <div className="bg-white rounded-lg p-6 shadow-lg">
-                <div className="flex gap-4">
+              <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
+                <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/aea0bb19-fb30-4880-8446-2301f85387f1.png" 
+                      src="/lovable-uploads/e4c80f96-cd27-4816-a3e8-ef7f4cf369e6.png" 
                       alt="Francisco Roberto Ramos de Souza"
-                      className="w-20 h-20 rounded-full object-cover"
+                      className="w-32 h-32 rounded-full object-cover"
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-ibm-plex font-bold text-lg text-farm-dark mb-2">
-                      Francisco Roberto Ramos de Souza 🇧🇷
-                    </h3>
+                    <div className="flex items-center gap-3 mb-2">
+                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
+                        Francisco Roberto Ramos de Souza
+                      </h3>
+                      <a 
+                        href="https://www.linkedin.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-gray-800 transition-colors"
+                      >
+                        <Linkedin size={20} />
+                      </a>
+                    </div>
                     <div className="font-ibm-plex text-sm text-gray-600 leading-relaxed space-y-1">
                       <p>• Bacharel em Economia</p>
                       <p>• Executivo sênior com mais de 35 anos de experiência no setor elétrico brasileiro - Geração, Transmissão, Distribuição, Comercialização</p>
@@ -361,19 +392,29 @@ const SobreNos = () => {
               </div>
 
               {/* Maurício Carripeiro Labo */}
-              <div className="bg-white rounded-lg p-6 shadow-lg">
-                <div className="flex gap-4">
+              <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2">
+                <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/aea0bb19-fb30-4880-8446-2301f85387f1.png" 
+                      src="/lovable-uploads/e4c80f96-cd27-4816-a3e8-ef7f4cf369e6.png" 
                       alt="Maurício Carripeiro Labo"
-                      className="w-20 h-20 rounded-full object-cover"
+                      className="w-32 h-32 rounded-full object-cover"
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-ibm-plex font-bold text-lg text-farm-dark mb-2">
-                      Maurício Carripeiro Labo 🇧🇷
-                    </h3>
+                    <div className="flex items-center gap-3 mb-2">
+                      <h3 className="font-ibm-plex font-bold text-lg text-farm-dark">
+                        Maurício Carripeiro Labo
+                      </h3>
+                      <a 
+                        href="https://www.linkedin.com/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-gray-800 transition-colors"
+                      >
+                        <Linkedin size={20} />
+                      </a>
+                    </div>
                     <div className="font-ibm-plex text-sm text-gray-600 leading-relaxed space-y-1">
                       <p>• Administrador de Empresas</p>
                       <p>• MBA em Finanças pela FGV</p>
