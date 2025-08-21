@@ -27,17 +27,11 @@ const Contato = () => {
           </h1>
         </div>
         
-        {/* Curved Bottom Section */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg 
-            viewBox="0 0 1200 120" 
-            preserveAspectRatio="none" 
-            className="w-full h-16 md:h-20"
-          >
-            <path 
-              d="M0,120 Q600,0 1200,120 L1200,120 L0,120 Z" 
-              fill="#f8fafc"
-            />
+        {/* Onda decorativa */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+          <svg viewBox="0 0 1200 120" className="w-full h-20" preserveAspectRatio="none">
+            <path d="M0,60 Q300,100 600,60 T1200,60 L1200,120 L0,120 Z" fill="#1EC4BF" />
+            <path d="M0,80 Q300,110 600,80 T1200,80 L1200,120 L0,120 Z" fill="#f8fafc" />
           </svg>
         </div>
       </div>
@@ -45,10 +39,10 @@ const Contato = () => {
       {/* Contact Information Section */}
       <div className="bg-slate-50 py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 max-w-6xl mx-auto items-start">
             
             {/* Telefone */}
-            <div className="text-center">
+            <div className="text-center md:col-span-2">
               <div className="flex justify-center mb-6">
                 <div className="w-16 h-16 bg-farm-primary rounded-full flex items-center justify-center">
                   <Phone className="w-8 h-8 text-white" />
@@ -66,12 +60,12 @@ const Contato = () => {
             </div>
 
             {/* Vertical Divider 1 */}
-            <div className="hidden md:flex justify-center">
-              <div className="w-px bg-[#D9D9D9] h-32"></div>
+            <div className="hidden md:flex justify-center items-start pt-2">
+              <div className="w-1 bg-[#D9D9D9] h-32"></div>
             </div>
 
             {/* E-mail */}
-            <div className="text-center md:col-start-3">
+            <div className="text-center md:col-span-2">
               <div className="flex justify-center mb-6">
                 <div className="w-16 h-16 bg-farm-primary rounded-full flex items-center justify-center">
                   <Mail className="w-8 h-8 text-white" />
@@ -89,17 +83,17 @@ const Contato = () => {
             </div>
 
             {/* Mobile Divider */}
-            <div className="md:hidden flex justify-center">
-              <div className="w-32 h-px bg-[#D9D9D9]"></div>
+            <div className="md:hidden flex justify-center col-span-full">
+              <div className="w-32 h-1 bg-[#D9D9D9]"></div>
             </div>
 
             {/* Vertical Divider 2 */}
-            <div className="hidden md:flex justify-center md:col-start-2 md:row-start-2">
-              <div className="w-px bg-[#D9D9D9] h-32"></div>
+            <div className="hidden md:flex justify-center items-start pt-2 md:col-start-3 md:row-start-2">
+              <div className="w-1 bg-[#D9D9D9] h-32"></div>
             </div>
 
             {/* Localização */}
-            <div className="text-center md:col-span-3">
+            <div className="text-center md:col-span-5 md:row-start-2">
               <div className="flex justify-center mb-6">
                 <div className="w-16 h-16 bg-farm-primary rounded-full flex items-center justify-center">
                   <MapPin className="w-8 h-8 text-white" />
