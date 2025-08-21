@@ -42,7 +42,7 @@ const Contato = () => {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 max-w-6xl mx-auto items-start">
             
             {/* Telefone */}
-            <div className="text-center md:col-span-2">
+            <div className="text-center">
               <div className="flex justify-center mb-6">
                 <div className="w-16 h-16 bg-farm-primary rounded-full flex items-center justify-center">
                   <Phone className="w-8 h-8 text-white" />
@@ -65,7 +65,7 @@ const Contato = () => {
             </div>
 
             {/* E-mail */}
-            <div className="text-center md:col-span-2">
+            <div className="text-center">
               <div className="flex justify-center mb-6">
                 <div className="w-16 h-16 bg-farm-primary rounded-full flex items-center justify-center">
                   <Mail className="w-8 h-8 text-white" />
@@ -82,18 +82,13 @@ const Contato = () => {
               </a>
             </div>
 
-            {/* Mobile Divider */}
-            <div className="md:hidden flex justify-center col-span-full">
-              <div className="w-32 h-1 bg-[#D9D9D9]"></div>
-            </div>
-
             {/* Vertical Divider 2 */}
-            <div className="hidden md:flex justify-center items-start pt-2 md:col-start-3 md:row-start-2">
+            <div className="hidden md:flex justify-center items-start pt-2">
               <div className="w-1 bg-[#D9D9D9] h-32"></div>
             </div>
 
             {/* Localização */}
-            <div className="text-center md:col-span-5 md:row-start-2">
+            <div className="text-center">
               <div className="flex justify-center mb-6">
                 <div className="w-16 h-16 bg-farm-primary rounded-full flex items-center justify-center">
                   <MapPin className="w-8 h-8 text-white" />
@@ -106,6 +101,11 @@ const Contato = () => {
                 <p>Avenida República do Líbano, 251</p>
                 <p>Empresarial Ibiomac, Torre 3, Sala 1314</p>
               </div>
+            </div>
+
+            {/* Mobile Dividers */}
+            <div className="md:hidden flex justify-center col-span-full">
+              <div className="w-32 h-1 bg-[#D9D9D9]"></div>
             </div>
           </div>
         </div>
