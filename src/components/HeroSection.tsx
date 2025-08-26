@@ -6,10 +6,9 @@ const HeroSection = () => {
     <section className="relative h-[400px] flex items-center">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/lovable-uploads/4a0e2ce2-25be-4cbc-844d-c688182dc588.png')`,
-          backgroundPosition: 'center center'
+          backgroundImage: `url('/lovable-uploads/4a0e2ce2-25be-4cbc-844d-c688182dc588.png')`
         }}
       />
       
