@@ -9,9 +9,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const SobreNos = () => {
   const [activeTab, setActiveTab] = useState<'empresa' | 'socios'>('empresa');
+  const [selectedEvento, setSelectedEvento] = useState<typeof eventos[0] | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const eventos = [
     {
@@ -19,42 +27,48 @@ const SobreNos = () => {
       titulo: "São Paulo - Sede Principal",
       data: "2018 - Presente",
       imagem: "/lovable-uploads/3f843eb5-c53f-4b40-8227-953be9aa2558.png",
-      descricao: "Nossa sede principal localizada no coração financeiro do Brasil"
+      descricao: "Nossa sede principal localizada no coração financeiro do Brasil",
+      descricaoCompleta: "Nossa sede principal está estrategicamente localizada no coração financeiro do Brasil, em São Paulo. Este escritório serve como centro de comando de todas as nossas operações, abrigando as equipes de liderança, desenvolvimento de projetos e relacionamento com clientes. Desde 2018, temos consolidado nossa presença na capital paulista, estabelecendo parcerias sólidas com instituições financeiras, empresas de energia e órgãos reguladores. O escritório conta com infraestrutura moderna e tecnológica para suportar nossos projetos de energia renovável em todo o território nacional."
     },
     {
       id: 2,
       titulo: "Rio de Janeiro - Filial",
       data: "2020 - Presente",
       imagem: "/lovable-uploads/96d24c0f-1dd1-4d1e-afb9-2797cfc551a5.png",
-      descricao: "Expansão para atender projetos no estado do Rio de Janeiro"
+      descricao: "Expansão para atender projetos no estado do Rio de Janeiro",
+      descricaoCompleta: "Nossa filial no Rio de Janeiro foi estabelecida em 2020 como parte da estratégia de expansão regional. Esta unidade é responsável por atender todo o estado do Rio de Janeiro e região, desenvolvendo projetos de energia renovável em parceria com empresas locais e o governo estadual. A equipe carioca foca especialmente em projetos de energia solar distribuída e pequenas centrais hidrelétricas, aproveitando as características geográficas favoráveis da região. O escritório também serve como ponte para projetos no Espírito Santo e sul da Bahia."
     },
     {
       id: 3,
       titulo: "Minas Gerais - Operações",
       data: "2021 - Presente",
       imagem: "/lovable-uploads/5408cd79-125c-4c87-99ae-048be3470a20.png",
-      descricao: "Centro de operações para projetos de energia renovável"
+      descricao: "Centro de operações para projetos de energia renovável",
+      descricaoCompleta: "O centro de operações em Minas Gerais, inaugurado em 2021, representa um marco importante em nossa expansão. Esta unidade concentra as atividades operacionais de monitoramento e manutenção de usinas de energia renovável em funcionamento. Minas Gerais foi escolhida estrategicamente por sua posição central no país e pela abundância de recursos naturais favoráveis à geração de energia limpa. A equipe mineira é especializada em operação e manutenção de usinas solares, pequenas centrais hidrelétricas e projetos de biomassa, garantindo máxima eficiência e produtividade dos ativos energéticos."
     },
     {
       id: 4,
       titulo: "Bahia - Energia Solar",
       data: "2022 - Presente",
       imagem: "/lovable-uploads/7fd02d58-7605-49fa-9845-66c81b2c6cf9.png",
-      descricao: "Especialização em projetos de energia solar fotovoltaica"
+      descricao: "Especialização em projetos de energia solar fotovoltaica",
+      descricaoCompleta: "Nossa unidade na Bahia, estabelecida em 2022, é especializada exclusivamente em projetos de energia solar fotovoltaica. A Bahia oferece condições excepcionais para geração solar, com altos índices de irradiação durante todo o ano. Nossa equipe baiana desenvolve desde grandes usinas solares até sistemas de geração distribuída para empresas e residências. Trabalhamos em estreita colaboração com fornecedores locais e internacionais de equipamentos fotovoltaicos, garantindo a melhor relação custo-benefício e tecnologia de ponta em todos os projetos. A unidade também atende os estados do Sergipe e parte de Pernambuco."
     },
     {
       id: 5,
       titulo: "Ceará - Energia Eólica",
       data: "2023 - Presente",
       imagem: "/lovable-uploads/b48a9089-cba9-43af-8ea6-f37cd74adf47.png",
-      descricao: "Foco em desenvolvimento de parques eólicos offshore e onshore"
+      descricao: "Foco em desenvolvimento de parques eólicos offshore e onshore",
+      descricaoCompleta: "A unidade do Ceará, nossa mais recente expansão de 2023, concentra-se no desenvolvimento de parques eólicos tanto onshore quanto offshore. O Ceará é líder nacional em geração eólica, oferecendo ventos constantes e de alta qualidade. Nossa equipe cearense trabalha no desenvolvimento de complexos eólicos de grande porte, desde a prospecção de áreas até a operação comercial. Temos expertise em estudos anemométricos, modelagem de ventos e otimização de layout de parques. Também desenvolvemos projetos piloto de energia eólica offshore, uma tecnologia emergente no Brasil com enorme potencial de crescimento."
     },
     {
       id: 6,
       titulo: "Paraná - Biomassa",
       data: "2024 - Presente",
       imagem: "/lovable-uploads/4a0e2ce2-25be-4cbc-844d-c688182dc588.png",
-      descricao: "Projetos inovadores de geração de energia a partir de biomassa"
+      descricao: "Projetos inovadores de geração de energia a partir de biomassa",
+      descricaoCompleta: "Nossa mais nova unidade, inaugurada em 2024 no Paraná, dedica-se ao desenvolvimento de projetos inovadores de geração de energia a partir de biomassa. O Paraná possui um forte setor agroindustrial, gerando abundantes resíduos que podem ser convertidos em energia limpa. Nossa equipe paranaense desenvolve projetos utilizando bagaço de cana, casca de arroz, resíduos florestais e outros materiais orgânicos. Trabalhamos com tecnologias avançadas de combustão, gasificação e biodigestão, sempre priorizando a sustentabilidade ambiental. Os projetos beneficiam tanto produtores rurais quanto indústrias, criando uma economia circular virtuosa."
     }
   ];
 
@@ -240,7 +254,13 @@ const SobreNos = () => {
                     <CarouselContent>
                       {eventos.map((evento) => (
                         <CarouselItem key={evento.id} className="md:basis-1/2 lg:basis-1/3">
-                          <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full">
+                          <div 
+                            className="bg-white rounded-lg shadow-lg overflow-hidden h-full cursor-pointer hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                            onClick={() => {
+                              setSelectedEvento(evento);
+                              setIsDialogOpen(true);
+                            }}
+                          >
                             <img 
                               src={evento.imagem} 
                               alt={evento.titulo}
@@ -255,6 +275,9 @@ const SobreNos = () => {
                               </h3>
                               <p className="font-ibm-plex text-gray-600 text-sm leading-relaxed">
                                 {evento.descricao}
+                              </p>
+                              <p className="font-ibm-plex text-farm-secondary text-xs mt-3 font-semibold">
+                                Clique para ver mais detalhes
                               </p>
                             </div>
                           </div>
@@ -436,6 +459,55 @@ const SobreNos = () => {
       </main>
       
       <Footer />
+
+      {/* Dialog para detalhes do evento */}
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          {selectedEvento && (
+            <>
+              <DialogHeader>
+                <DialogTitle className="font-ibm-plex text-2xl font-bold text-farm-dark">
+                  {selectedEvento.titulo}
+                </DialogTitle>
+              </DialogHeader>
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <img 
+                      src={selectedEvento.imagem} 
+                      alt={selectedEvento.titulo}
+                      className="w-full h-64 object-cover rounded-lg"
+                    />
+                  </div>
+                  <div className="space-y-4">
+                    <div>
+                      <span className="text-farm-secondary font-ibm-plex font-semibold text-sm">
+                        {selectedEvento.data}
+                      </span>
+                    </div>
+                    <div>
+                      <h4 className="font-ibm-plex font-bold text-lg text-farm-dark mb-2">
+                        Resumo
+                      </h4>
+                      <p className="font-ibm-plex text-gray-600 leading-relaxed">
+                        {selectedEvento.descricao}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-ibm-plex font-bold text-lg text-farm-dark mb-4">
+                    Detalhes Completos
+                  </h4>
+                  <p className="font-ibm-plex text-gray-600 leading-relaxed text-justify">
+                    {selectedEvento.descricaoCompleta}
+                  </p>
+                </div>
+              </div>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
