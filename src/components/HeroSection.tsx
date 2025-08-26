@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[600px] flex items-center">
+    <section className="relative h-[400px] flex items-center">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
